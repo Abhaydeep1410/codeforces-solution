@@ -1,4 +1,4 @@
-//  A. Line Trip
+//  A. Cover in Water
 
 import java.util.*;
 import java.lang.*;
@@ -22,20 +22,22 @@ public class Main {
 
     static void solve() {
         int n = fs.nextInt();
-        int m = fs.nextInt();
+        String s=fs.next();
 
-        int arr[]=new int[n];
-        for(int i=0;i<n;i++)
-            arr[i]=fs.nextInt();
-
-        int prev=0;
-        int diff=0;
-        for(int i=0;i<n;i++){
-            diff=Math.max(diff,arr[i]-prev);
-            prev=arr[i];
+        int countdots=0,countmaxdot=0;
+        for(int i=0;i<n;i++) {
+            if(s.charAt(i)=='.') {
+                countdots++;
+                countmaxdot++;
+                if(countmaxdot>=3){
+                    out.println(2);
+                    return ;
+                }
+            }else{
+                countmaxdot=0;
+            }
         }
-        diff=Math.max(diff,2*(Math.abs(arr[n-1]-m)));
-        out.println(diff);
+        out.println(countdots);
     }
 
     // ---------- Fast Input ----------

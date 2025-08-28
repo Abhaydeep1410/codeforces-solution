@@ -4,6 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Codeforces - Codeforces Round 911 Div 2/A. Cover in Water" />
       <excludeFolder url="file://$MODULE_DIR$/Codeforces - Codeforces Round 912 Div 2/A. Halloumi Boxes" />
       <excludeFolder url="file://$MODULE_DIR$/Codeforces - Educational Codeforces Round 158 Rated for Div 2/A. Line Trip" />
     </content>
